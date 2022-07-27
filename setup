@@ -1,0 +1,56 @@
+GIT COMMANDS:-
+
+ Git clean -n   :-to remove untracked files, which are not added into staging area 
+
+Git merge 1st 
+Git checkout master (to come into master branch)
+Git revert <commit ID>     to revert the changes we made in commit 
+Git tag -a impo -m “impo hai” <commitID>   …..tagging in git
+Git tag   ——to see all the tags
+Git show <tag>.    ……..to see the commit with out any commit id only with tag 
+Git tag -d <tag name>  delete tag
+Git clone https://www.github.com/akirepo
+
+Basic Configuration of Git on local machine:-
+
+Git config —global user.name “ski”
+Git config —global user.email”aa”      >>>>>for configuration  and to check git config —list
+
+
+Git add . (To add file to staging area)
+Git reset . (n case we mistakenly added any code to staging area so to revert from git add)
+Git commit -m “1st commit”  (to commit our code)
+Git remote add origin https://github/akirepo.com (to add GitHub repo on local machine)
+Git push -u origin master  (to push our code on GitHub)
+Git log (to check the history of all commits).
+ Git tag -a impo -m “impo hai” <commitID> (to add tag)
+Git tag  ( to list all tags)
+
+GIT IGNORE:-
+create 1 hidden file .gitignore and enter file format you want to ignore:-
+Vi .gitignore
+Put format here:- * .css
+                               * .java 
+:wq
+
+So all the files with .java and .css format will be ignored if we commit any file with these extensions
+Git add .gitignore
+Git commit -m “ignore”
+Git push -u origin master
+
+git branch -D <branch-name>  force deletion
+git branch -d <branch-name> to delete any branch 
+
+GIT STASH:-
+
+To put hold on running code and save it to stash, can be pulled back when required.
+ 
+Git stash (to put into stash)
+Git stash list 
+Git stash apply stash@{0}  (number will be allocated to stash file and this command to bring back file from stash, file will be. Copied not cut and paste )
+Git stash clear 
+
+
+
+
+
